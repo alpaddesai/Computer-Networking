@@ -6,7 +6,7 @@ either custom by Alpa D Desai or a reference name is included.Copyright protecti
 
 
 ## Serial I/O Communication Interfaces
-![image](Computer Networking.png)
+![image](Computer_ Networking.png)
 
 ## Protocols
 ![image](Protocols.png)
