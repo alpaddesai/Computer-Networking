@@ -5,3 +5,17 @@ executable on https://github.com/alpaddesai/Computer-Networking/releases. Compan
 either custom by Alpa D Desai or a reference name is included.Copyright protection in process.
 
 
+## Serial I/O Communication Interfaces
+![image](Computer Networking.png)
+
+## Protocols
+![image](Protocols.png)
+
+## Ethernet
+![image](Ethernet.png)
+
+## Microcontroller serial interface I2C bus
+![image](I2CBus.png)
+
+## Microcontroller serial interface SPI bus
+![image](I2CBus.png)
