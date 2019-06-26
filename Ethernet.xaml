@@ -1,0 +1,106 @@
+﻿<Window x:Class="ComputerNetworking.Ethernet"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:ComputerNetworking"
+        mc:Ignorable="d"
+        Title="Ethernet" Height="867" Width="953">
+    <Grid Margin="0,0,3,6">
+        <Label Content="Reference: Practical TCP/IP and Ethernet Networking for the Industry" HorizontalAlignment="Left" Margin="16,769,0,0" VerticalAlignment="Top" Width="389"/>
+        <RichTextBox HorizontalAlignment="Left" Height="763" Margin="6,2,0,0" VerticalAlignment="Top" Width="922" TextChanged="RichTextBox_TextChanged">
+            <FlowDocument>
+                <Paragraph>
+                    <Run FontWeight="Bold" Text="Local Area Network :  "/>
+                    <Run Text=" "/>
+                    <Run Text="(LAN) is characterized by a thick ethernet which operates at 10Mb/s over a maximum distance of 500m. "/>
+                </Paragraph>
+                <Paragraph>
+                    <Run FontWeight="Bold" Text="Wide Area Network: "/>
+                    <Run Text=" "/>
+                    <Run Text="(WAN) are used to link LANs that are separated by large distances that range from few tens to meters to thousands of kilometers. Special equipment called gateways are utilized to store the message at LAN speed and transmit it across the communications cloud (links supplied by independent telecommunication utilities) at a lower speed. Typical seepds are 9600bps to 45 Mbps.   Hence LAN1 -&gt; router -&gt; LAN2 = 96000bps distance."/>
+                    <Run Text=" "/>
+                    <Run FontWeight="Bold" Text=" Metropolitan Area Network "/>
+                    <Run Text=" "/>
+                    <Run Text="(MAN): An intermediate type of network MANs operate at speeds ranging from 56 kbps to 100Mbps typically at higher speeds than WAN and slower than LAN. MANs use fiber optic technology to communicate over distances of up to several hundred km. "/>
+                    <Run Text=" "/>
+                    <Run FontWeight="Bold" Text="Virtual private networks "/>
+                    <Run Text=" "/>
+                    <Run Text="(VPN) Utilizes encryption technique to make all communication between the LANs unusable by other internet users."/>
+                </Paragraph>
+                <Paragraph>
+                    <Run FontWeight="Bold" Text="Interconnection reference model (OSI model): "/>
+                    <Run Text=" "/>
+                    <Run Text="It is a data communications management infrastructure which breaks down data communications to a manageable hierarchy of seven layers.  The OSI reference model includes application, presentation, session, transport, network, data link and physical. "/>
+                    <Run Text=" "/>
+                    <Run FontWeight="Bold" Text="Service primitive:  "/>
+                    <Run Text=" "/>
+                    <Run Text="The service provided by any layer and expressed in the form of a service primitive with the data to be transferred as a parameter "/>
+                    <Run Text=" "/>
+                    <Run FontWeight="Bold" Text="Application layer: "/>
+                    <Run Text=" "/>
+                    <Run Text="Examples of tasks in this layer include file transfer, electronic mail services and network management.  The details depend on the framework or model being used. There are several network management applications, and each of these provides services and functions specified in a different framework for network management. "/>
+                    <Run Text=" "/>
+                    <Run FontWeight="Bold" Text="Presentation layer: "/>
+                    <Run Text=" "/>
+                    <Run Text=" Data compression or expansion, data encryption or decryption, data conversion from EBCDIC to ASCII are carried out at this layer.  "/>
+                    <Run Text=" "/>
+                    <Run FontWeight="Bold" Text="Session layer:  "/>
+                    <Run Text=" "/>
+                    <Run Text="The session layer is responsible for synchronizing and sequencing the dialog and packets in a network connection, this layer is also responsible for making sure that the connection is maintained until the transmission is complete.  "/>
+                    <Run Text=" "/>
+                    <Run FontWeight="Bold" Text="Transport layer:  "/>
+                    <Run Text=" "/>
+                    <Run Text="Responsible for providing data transfer at a certain quality and error rate. It transports outgoing packets and receives incoming packets. Transfer layer protocols include TP0 ( does not require error detection or error correction), TP1 (provides it's own error detection along with services for getting the sender to retransmit any erroneous packets), TP2 (multiple transport connections can be sustained over the single connection), TP3 (capabilities of TP1 and TP2) , TP4 (most advanced protocol). "/>
+                    <Run Text=" "/>
+                    <Run FontWeight="Bold" Text="Network layer: "/>
+                    <Run Text=" "/>
+                    <Run Text="Translating from hardware to network addresses and vice versa. Finding a route between two intermediate devices or source and destination node, establishes and maintains a communication between the two nodes. It is also responsible for fragmenting large packets of data into frames which are small enough to be transmitted by the underlying data link layer (fragmentation).  "/>
+                    <Run Text=" "/>
+                    <Run FontWeight="Bold" Text="Data link layer:  "/>
+                    <Run Text=" "/>
+                    <Run Text="Key responsibility for the data link layer is creating, transmitting and receiving data packets. Network architectures (such as Ethernet) encompass the data link and physical layers.   The IEEE 802.x networking group has refined the data link layer into two sub layers * Logical link control LLC sub layer at the top, * Media access control (MAC) sub layer at the bottom.  The LLC sub layer provides for an interface for the network layer protocols and controls the logical communication with its peers at the receiving side.  "/>
+                    <Run Text=" "/>
+                    <Run FontWeight="Bold" Text="Physical layer:  "/>
+                    <Run Text=" "/>
+                    <Run Text="Defines the mechanical and electrical properties of the transmission medium, types of pin assignments, format of electrical signals, type of cable and connectors used. "/>
+                    <Run Text=" "/>
+                    <Run FontWeight="Bold" Text="TCP/IP "/>
+                    <Run Text=" "/>
+                    <Run Text=": operates as a set of programs that interacts at the transport and network layers without having the details of the underlying implementation.  Hence manufacturers of propriety equipment utilize TPC/IP to service internetworking ( describes interconnections of different networks). "/>
+                    <Run Text=" "/>
+                    <Run FontWeight="Bold" Text="Functional emphasis of protocols:   "/>
+                    <Run Text=" "/>
+                    <Run Text="Master/slave, peer to peer, connection oriented, asynchronous ( send data one byte at a time with a varying delay), synchronous (send data at the clock rate of the network), layered ( OSI model) , monolithic ( single layer provides all the functionality), heavy , light. "/>
+                </Paragraph>
+                <Paragraph>
+                    <Run FontWeight="Bold" Text="Ethernet (IEEE 802.3 CSMA/CD) frame format : "/>
+                    <Run Text="The standard defines various cable media and transmission rates up to 10Mb/s, 10Base2: thin wire coaxial cable, 10BastT: Unscreened twisted pair cable, 10Mbps, 10BaseF, optical fiber cables, 10Mbps, 1Base5 unscreened twisted pair cables, 10Broad36: Cable TV, 10Mbps, broadband.   The basic frame format for the 802.3 network is shown below:    The maximum length is 64 octets (groups of 8)  512 bits, max length 1518 octets. "/>
+                </Paragraph>
+                <Paragraph>
+                    <Run FontWeight="Bold" Text="Preamble"/>
+                    <Run Text=": Field consists of 7 (groups of 8) 10101010, it is used by the receiver to synchronize its clock to the transmitter.                                                                                         "/>
+                    <Run FontWeight="Bold" Text="Start frame delimiter: "/>
+                    <Run Text="It enables the receiver to recognize the commencement of the address fields.  "/>
+                    <Run FontWeight="Bold" Text="                                                                                                                              Source and destination address"/>
+                    <Run Text=":  Physical address of the source and destination nodes.  Broadcast, multicast, individual.                                                                                           "/>
+                    <Run FontWeight="Bold" Text="Length indicator"/>
+                    <Run Text=": A two octet field which provides the length of the data field.                                                                                                                                                           "/>
+                    <Run FontWeight="Bold" Text="Data: "/>
+                    <Run Text="Information "/>
+                    <Run FontWeight="Bold" Text="                                                                                                                                                                                                                                                                Pad: "/>
+                    <Run Text="Random data , the cyclic redundancy check is calculated over the data in the pad field. , The length field provides the length of the data and hence ignore the ad field once the CRC is ok. "/>
+                    <Run FontWeight="Bold" Text="                                                                                                                                                                                                                                                    Frame Check Sequence:  "/>
+                    <Run Text="A 32 bit CRC value that is computed in HW at the transmitter and appended to the frame. It is the same algorithm as 802.4 and 802.5"/>
+                </Paragraph>
+                <Paragraph>
+                    <Run FontWeight="Bold" Text="Collisions"/>
+                    <Run Text=":  Collisions occur due to the # of packets per second, signal prop delay amongst nodes, # of stations utilizing the packets and BW utilization."/>
+                </Paragraph>
+                <Paragraph>
+                    <Run/>
+                </Paragraph>
+            </FlowDocument>
+        </RichTextBox>
+    </Grid>
+</Window>

@@ -1,0 +1,23 @@
+C:\Users\ADG\source\repos\ComputerNetworking\ComputerNetworking\bin\Debug\ComputerNetworking.exe.config
+C:\Users\ADG\source\repos\ComputerNetworking\ComputerNetworking\bin\Debug\ComputerNetworking.exe
+C:\Users\ADG\source\repos\ComputerNetworking\ComputerNetworking\bin\Debug\ComputerNetworking.pdb
+C:\Users\ADG\source\repos\ComputerNetworking\ComputerNetworking\obj\Debug\Ethernet.g.cs
+C:\Users\ADG\source\repos\ComputerNetworking\ComputerNetworking\obj\Debug\I2Cbus.g.cs
+C:\Users\ADG\source\repos\ComputerNetworking\ComputerNetworking\obj\Debug\MainWindow.g.cs
+C:\Users\ADG\source\repos\ComputerNetworking\ComputerNetworking\obj\Debug\Protocols.g.cs
+C:\Users\ADG\source\repos\ComputerNetworking\ComputerNetworking\obj\Debug\Serial Peripheral Interface (SPI).g.cs
+C:\Users\ADG\source\repos\ComputerNetworking\ComputerNetworking\obj\Debug\App.g.cs
+C:\Users\ADG\source\repos\ComputerNetworking\ComputerNetworking\obj\Debug\ComputerNetworking_MarkupCompile.cache
+C:\Users\ADG\source\repos\ComputerNetworking\ComputerNetworking\obj\Debug\ComputerNetworking_MarkupCompile.lref
+C:\Users\ADG\source\repos\ComputerNetworking\ComputerNetworking\obj\Debug\Ethernet.baml
+C:\Users\ADG\source\repos\ComputerNetworking\ComputerNetworking\obj\Debug\I2Cbus.baml
+C:\Users\ADG\source\repos\ComputerNetworking\ComputerNetworking\obj\Debug\MainWindow.baml
+C:\Users\ADG\source\repos\ComputerNetworking\ComputerNetworking\obj\Debug\Protocols.baml
+C:\Users\ADG\source\repos\ComputerNetworking\ComputerNetworking\obj\Debug\Serial Peripheral Interface (SPI).baml
+C:\Users\ADG\source\repos\ComputerNetworking\ComputerNetworking\obj\Debug\ComputerNetworking.g.resources
+C:\Users\ADG\source\repos\ComputerNetworking\ComputerNetworking\obj\Debug\ComputerNetworking.Properties.Resources.resources
+C:\Users\ADG\source\repos\ComputerNetworking\ComputerNetworking\obj\Debug\ComputerNetworking.csproj.GenerateResource.cache
+C:\Users\ADG\source\repos\ComputerNetworking\ComputerNetworking\obj\Debug\ComputerNetworking.csproj.CoreCompileInputs.cache
+C:\Users\ADG\source\repos\ComputerNetworking\ComputerNetworking\obj\Debug\ComputerNetworking.exe
+C:\Users\ADG\source\repos\ComputerNetworking\ComputerNetworking\obj\Debug\ComputerNetworking.pdb
+C:\Users\ADG\source\repos\ComputerNetworking\ComputerNetworking\obj\Debug\ComputerNetworking.csprojAssemblyReference.cache

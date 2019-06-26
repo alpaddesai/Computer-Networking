@@ -1,0 +1,27 @@
+﻿<Window x:Class="ComputerNetworking.Serial_Peripheral_Interface__SPI_"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:ComputerNetworking"
+        mc:Ignorable="d"
+        Title="Serial_Peripheral_Interface__SPI_" Height="450" Width="800" MaxWidth="800" MaxHeight="450">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="425*"/>
+            <ColumnDefinition Width="367*"/>
+        </Grid.ColumnDefinitions>
+        <RichTextBox Height="154" Margin="11,8,53,0" VerticalAlignment="Top" TextChanged="RichTextBox_TextChanged" Grid.ColumnSpan="2">
+            <FlowDocument>
+                <Paragraph>
+                    <Run Text="The Serial Peripheral Interface is a three wire synchronous serial link. The SCLK pin  starts the transmission by providing the clock (SCLK) with output data provided on the serial data out (SDO) pin and input data on the serial data in (SDI) pin.  Duplex transmission"/>
+                </Paragraph>
+                <Paragraph>
+                    <Run Text="Master   Peripheral device I   Peripheral device II                                                                                                                                               SDO &#x9;          SDI                      SDI                                                                                                                                                                    SDI                  SDO                     SDO                                                                                                                                                                      chip select  device select     device select                                                                                                                                                                           SCK                 SCK"/>
+                </Paragraph>
+            </FlowDocument>
+        </RichTextBox>
+        <Image Grid.ColumnSpan="2" Margin="11,163,54,47" Source="Image3.png" Stretch="Fill"/>
+
+    </Grid>
+</Window>

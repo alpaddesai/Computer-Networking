@@ -1,0 +1,45 @@
+﻿<Window x:Class="ComputerNetworking.I2Cbus"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:ComputerNetworking"
+        mc:Ignorable="d"
+        Title="I2Cbus" Height="550" Width="862" MaxWidth="838" MaxHeight="550">
+    <Grid Margin="0,0,24,13" MaxWidth="806" MaxHeight="506">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="254*"/>
+            <RowDefinition Height="257*"/>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="101*"/>
+            <ColumnDefinition Width="721*"/>
+        </Grid.ColumnDefinitions>
+        <RichTextBox HorizontalAlignment="Left" Height="232" Margin="30,10,0,0" VerticalAlignment="Top" Width="772" TextChanged="RichTextBox_TextChanged" Grid.ColumnSpan="2">
+            <FlowDocument>
+                <Paragraph>
+                    <Run FontWeight="Bold" Text="Data Rate:  "/>
+                    <Run Text="100, 400 kb/s ,1, 3.4Mb/s "/>
+                </Paragraph>
+                <Paragraph>
+                    <Run/>
+                    <Run FontWeight="Bold" Text="Advantages:  "/>
+                    <Run Text="Simple , master - slave access methodology, single access at a time.  Separate data (SDA) and clock (SCL) lines. Only two pins."/>
+                </Paragraph>
+                <Paragraph>
+                    <Run FontWeight="Bold" Text="Variations: "/>
+                    <Run Text="The SMBus, PMBus, AVSBus are all variations of the I2C interface with protocol differences."/>
+                </Paragraph>
+                <Paragraph>
+                    <Run FontWeight="Bold" Text="PCB traces"/>
+                    <Run Text=": The SDA and SCL lines are pulled up by pull up resistors (determined by the # of capacitance i.e connections to the I2C bus) to the power supply and are shared amongst the various devices starting form the microcontroller or processor to IO expanders, EEPRom, LCD Driver sensors and other devices on the board.  Since it's an open drain connection, the output when active can pull the bus down.    Each device has a 7 bit address whose upper 4 bits are device specific and encoded within the device. The next 3 bits are address bits and are hard-wired on the board.     Each peripheral device decodes the address byte sent by the microcontroller to determine if it is the target of the transmission, removing the need for an individual chip select line."/>
+                </Paragraph>
+                <Paragraph>
+                    <Run Text="Reference: Microcontrollers, 2nd Edition by Bryan A Jones, JW. Bruce, Robert Reese"/>
+                </Paragraph>
+            </FlowDocument>
+        </RichTextBox>
+        <Image Grid.ColumnSpan="2" Margin="32,1,28,-4" Source="Image2.png" Stretch="Fill" Grid.Row="1"/>
+
+    </Grid>
+</Window>

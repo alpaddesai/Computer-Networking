@@ -1,0 +1,80 @@
+﻿<Window x:Class="ComputerNetworking.Protocols"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:ComputerNetworking"
+        mc:Ignorable="d"
+        Title="Protocols" Height="667.25" Width="894" MaxWidth="894" MaxHeight="667">
+    <Grid Margin="0,0,2,15">
+        <Grid.Background>
+            <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                <GradientStop Color="Black" Offset="0"/>
+                <GradientStop Color="{DynamicResource {x:Static SystemColors.ActiveCaptionColorKey}}" Offset="1"/>
+            </LinearGradientBrush>
+        </Grid.Background>
+        <RichTextBox HorizontalAlignment="Left" Margin="10,10,0,10" Width="864" TextChanged="RichTextBox_TextChanged">
+            <FlowDocument>
+                <Paragraph>
+                    <Run FontWeight="Bold" Text="Protocols:  "/>
+                    <Run Text=" "/>
+                    <Run Text=" "/>
+                    <Run Text=" "/>
+                    <Run Text=" "/>
+                    <Run Text=" "/>
+                    <Run Text=" "/>
+                    <Run Text=" "/>
+                    <Run Text="Defined as the signal/message/rule or procedure that defines how nodes on a network communicate. All protocols define a frame format that consists of fields of bits that provide the start and end of the frame, destination and/or source node addresses, number of bytes sent, error correction type and other relevant information for the transmission. Sync bits initiate the frame and initiates clock synchronization in the receiver, ADR bit provides the destination address bits, The data is usually a large number of bytes, following the data is a field containing the error correction code and the last bit signals the end of the frame. This is the generic frame format , special bits and fields are added to implement the unique protocol.  Frames can be transmitted asynchronously or synchronously one bit at a time. Features include: Initialization, framing and synchronization, flow control, line control, error control and time out control."/>
+                </Paragraph>
+                <Paragraph>
+                    <Run FontWeight="Bold" Text="Bit  Encoding techniques "/>
+                    <Run Text=" "/>
+                    <Run Text=" "/>
+                    <Run Text=" "/>
+                    <Run Text="include 8b/10b encoding which ensures a 50.50 % mix of binary 1s and 0s. The coding also enables a method to the data words aligned. The encoding is very common and it represents a 25% overhead that reduces the data rate. Another technique is bit scrambling. A pseudo random bit sequence is transmitted (via a linear feedback shift register) over the transmission medium and descrambled by another linear feedback shift register at the receiver end.  Advantages include resolving the DC balance problem since there is no charge up of the low pass filter or high pass filter with a dc blocking cap from a momentum of charge from a say 80% 1s on the bit stream.  It prevents the receiver clock data recovery from losing lock. It also provides automatic gain control (AGC) or equalization"/>
+                </Paragraph>
+                <Paragraph>
+                    <Run FontWeight="Bold" Text="Error Detection and Correction: "/>
+                    <Run Text=" "/>
+                    <Run Text=" High speed serial interfaces incorporate protocols for error detection or forward error correction. The forward error correction methods code gain offsets that offset noise in the channel.  Forms of error detection includes"/>
+                    <Run Text=" "/>
+                    <Run FontWeight="Bold" Text=": Parity bit:"/>
+                    <Run Text=" "/>
+                    <Run Text=" Circuitry determines the total #  of bits that is needed  to be transmitted. It adds a parity bit to indicate whether an odd or even number of bits are to be transmitted. The parity bit is added to the word to be transmitted. At the receiver end , if there is a difference an error occurred. It lacks the intelligence to determine where or what the bit error is.  An error usually restarts the retransmission of the word or frame. "/>
+                    <Run Text=" "/>
+                    <Run FontWeight="Bold" Text="Block Check Code"/>
+                    <Run Text=" "/>
+                    <Run Text=" : The block of data undergoes a complex algorithm that computes a multi bit word which is transmitted along with the data. One such method creates a block check code (BCC) or block check sequence (BCS), hence these methods create the multi bit word. The specific sequence of words to be transmitted are added or XORed to produce a unique BCC character that is transmitted at the end of t he data. The process is repeated a the receiver end and the unique identifiers are compared, the advantage of this method is that it permits the identification of specific bit error locations. "/>
+                    <Run Text=" "/>
+                    <Run FontWeight="Bold" Text="CRC"/>
+                    <Run Text=" "/>
+                    <Run Text=" : The cyclic redundancy check (CRC), it is a method that divides a block of data by a constant, the quotient is discarded and the remainder is transmitted as the CRC. The implementation includes shift registers and XOR gates. It can have a different length of words from 8,16 or more bits. The pros includes a capability of detecting up to 99.9% of all bit errors. "/>
+                    <Run Text=" "/>
+                    <Run FontWeight="Bold" Text="FEC (forward error correction) "/>
+                    <Run Text=" "/>
+                    <Run Text="utilizes more elaborate methods. A block of 255 bytes produced from a 32 bit parity word is appended to the data.  The receiver also duplicates the transmission , compares the FEC parity word and then corrects it.   "/>
+                    <Run Text=" "/>
+                    <Run Text=" "/>
+                    <Run Text=" "/>
+                    <Run Text=" "/>
+                    <Run Text=" "/>
+                    <Run Text=" "/>
+                    <Run Text=" "/>
+                    <Run FontWeight="Bold"/>
+                </Paragraph>
+                <Paragraph>
+                    <Run FontWeight="Bold" Text="Access Methods: "/>
+                    <Run Text=" "/>
+                    <Run Text="The various methods of priority and access to the transmission medium by more than two devices  are called access methods. The fall in the following categories: Master-Slave, Carrier Sense Multiple Access (CSMA) and Time Division Multiple Access (TDMA). In a master-slave access system a single master-controller access two or more slaves. The controller provides conflict resolution and transmit/receive ready control lines. Interface protocols use commands. Polling or asking in sequence is a common technique. In a CSMA system all the nodes on a bus listen before transmitting data.  A collision detection (CD) technique is implemented , this identifies collisions. A collision causes all parties to stop transmitting and to wait for a random amount of time.  The disadvantage is that since it automatically handles all contention, this extra contention and collision causes a reduction in overall throughput and increases latency.   The time division multiple access (TDMA) method uses a time slicing methodology. When a node needs to transmit it waits for its time slot, this reduces the speed of transmission. "/>
+                    <Run Text=" "/>
+                    <Run FontWeight="Bold" Text="Duplexing: "/>
+                    <Run Text=" "/>
+                    <Run Text=" "/>
+                    <Run Text=" "/>
+                    <Run Text="In general means two way communication. Half duplexing is alternating transmit and receive operations on single channel, both parties cannot transmit at the same time, and full duplex means simultaneous transmit and receive operations on two separate channels. Full duplex on a single channel employs the TDMA method. A third method simplex is broadcast mode to multiple nodes.      "/>
+                </Paragraph>
+            </FlowDocument>
+        </RichTextBox>
+
+    </Grid>
+</Window>
