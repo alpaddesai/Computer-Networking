@@ -1,7 +1,6 @@
 C:\Users\ADG\source\repos\ComputerNetworking\ComputerNetworking\bin\Release\ComputerNetworking.exe.config
 C:\Users\ADG\source\repos\ComputerNetworking\ComputerNetworking\bin\Release\ComputerNetworking.exe
 C:\Users\ADG\source\repos\ComputerNetworking\ComputerNetworking\bin\Release\ComputerNetworking.pdb
-C:\Users\ADG\source\repos\ComputerNetworking\ComputerNetworking\obj\Release\ComputerNetworking.csprojAssemblyReference.cache
 C:\Users\ADG\source\repos\ComputerNetworking\ComputerNetworking\obj\Release\Ethernet.g.cs
 C:\Users\ADG\source\repos\ComputerNetworking\ComputerNetworking\obj\Release\I2Cbus.g.cs
 C:\Users\ADG\source\repos\ComputerNetworking\ComputerNetworking\obj\Release\MainWindow.g.cs
