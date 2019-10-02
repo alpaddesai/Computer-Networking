@@ -18,4 +18,4 @@ either custom by Alpa D Desai or a reference name is included.Copyright protecti
 ![image](I2CBus.png)
 
 ## Microcontroller serial interface SPI bus
-![image](I2CBus.png)
+![image](SPI.png)
