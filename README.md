@@ -19,3 +19,6 @@ either custom by Alpa D Desai or a reference name is included.
 
 ## Microcontroller serial interface SPI bus
 ![image](SPI.png)
+
+## Wireless Networking
+![image](Wireless Networking.jpg)
