@@ -21,4 +21,4 @@ either custom by Alpa D Desai or a reference name is included.
 ![image](SPI.png)
 
 ## Wireless Networking
-![image](Wireless Networking.jpg)
+![image](WirelessNetworking.jpg)
