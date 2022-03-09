@@ -24,5 +24,6 @@ either custom by Alpa D Desai or a reference name is included.
 ![image](WirelessNetworking.jpg)
 
 ## Fundamentals of Computer Networking
+![image](FundamentalsOfComputerNetworking.jpg)
 
 Additional details : https://github.com/alpaddesai/SmartGridDesignIdea
