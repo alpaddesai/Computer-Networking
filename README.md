@@ -26,4 +26,7 @@ either custom by Alpa D Desai or a reference name is included.
 ## Fundamentals of Computer Networking
 ![image](FundamentalsComputerNetworking.jpg)
 
+## Networking Fundamentals
+![image](NetworkingFundamentals.jpg)
+
 Additional details : https://github.com/alpaddesai/SmartGridDesignIdea
