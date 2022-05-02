@@ -29,4 +29,10 @@ either custom by Alpa D Desai or a reference name is included.
 ## Networking Fundamentals
 ![image](NetworkingFundamentals.jpg)
 
+## CLient Server communication
+![image](ServerClientImage.jpg)
+
+## Synchronization
+![image](Synchronization.jpg)
+
 Additional details : https://github.com/alpaddesai/SmartGridDesignIdea
