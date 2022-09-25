@@ -35,4 +35,6 @@ either custom by Alpa D Desai or a reference name is included.
 ## Synchronization
 ![image](Synchronization.jpg)
 
+![image](USCopyrightCertificate.png)
+
 Additional details : https://github.com/alpaddesai/SmartGridDesignIdea
