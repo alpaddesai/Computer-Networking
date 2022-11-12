@@ -37,4 +37,6 @@ either custom by Alpa D Desai or a reference name is included.
 
 ![image](USCopyrightCertificate.png)
 
+![image](Ethics.jpg)
+
 Additional details : https://github.com/alpaddesai/SmartGridDesignIdea
