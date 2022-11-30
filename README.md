@@ -35,9 +35,6 @@ either custom by Alpa D Desai or a reference name is included.
 ## Synchronization
 ![image](Synchronization.jpg)
 
-## CFA Exam
-![imagedd](CFAExam.jpg)
-
 ![image](USCopyrightCertificate.png)
 
 ![image](Ethics.jpg)
