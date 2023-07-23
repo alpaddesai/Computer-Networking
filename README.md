@@ -23,9 +23,6 @@ either custom by Alpa D Desai or a reference name is included.
 ## Wireless Networking
 ![image](WirelessNetworking.jpg)
 
-## Fundamentals of Computer Networking
-![image](FundamentalsComputerNetworking.jpg)
-
 ## Networking Fundamentals
 ![image](NetworkingFundamentals.jpg)
 
